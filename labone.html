@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+          <h1 id="project_title">ECE 3400 Lab Work</h1>
+          <h2 id="project_tagline">Fall 2019 - Group #23</h2>
+		  <h3 id="labs">Lab 1 - Microcontroller</h3>
+            <section id="downloads">
+              <a class="link" href="https://github.com/mueedurrehman/ece3400">Our Github for Lab 1</br></a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+	  </br>
+	  The objective of this lab was to test an Arduino Uno board, as well as eventually create a moving robot by the end of the lab. </br>
+	  We inserted a 300 Ohm Resistor in series for safety to avoid damaging any of our components, and tested all the pins.</br>
+	  For Lab 1, we first tested an LED as well as, in the process, the connectors of our Arduino Uno microcontroller.</br>
+	  After testing all the pins to see if our board was working, we attempted to change the brightness of the LED as instructed in the lab. </br>
+	  We encountered some trouble in getting an output for the brightness, as well as some issues with the connections in our circuit.</br>
+	  Meanwhile, we also started working on connecting the parts of our robot and circuit, mainly the servo.</br>
+	  We got into some issues getting our servo to work correctly, until realized that we were supposed to connect it to the Arduino</br>
+	  rather than the battery; it was acting erraticly before we fixed this oversight.</br>
+	  Eventually, we better organized our circuit to fit on our robot and managed to get the breadboard on top of it.</br>
+	  Our wire management made our work and testing much easier, compared to the usual mess of wires that a circuit usually becomes.</br>
+	  </br>
+	  After all the hardware handiwork, we returned to coding to program our board and Parallax servo to move in a controlled manner;</br>
+	  we tested front and back movement as well as making the robot turn. While working, we noticed that the robot would do things completely</br> 
+	  unexpectedly, such as being able to move with our code being full of errors, so much so that the robot shouldn't have been able to do<i> anything. </i> </br>
+	  
+	  Once we understood and figured out how to control our robot through the software, we began to test different ways we wanted</br>
+	  the robot to move, such as tweaking the speed of the wheels so we could eventually make it move <i> nearly </i> straight. </br>
+	  This part of the lab took the most trial and error, because, as we quickly learned, we had to make our software work for the hardware (eg. the wheels), </br>
+	  rather than the other way around. We predict that this will probably be a common theme in our future ECE 3400 labs and projects. </br>
+	  
+	  </br>
+	  
+	  Finally, we got our robot to move in a specific pattern: we made it move in a square, or at least very close to that.</br>
+	  We got it to move straight in one direction for some time, and programmed it to turn 90 degrees after that time. </br>
+	  
+	  </section>
+
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+    </div>
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+  </body>
+</html>
