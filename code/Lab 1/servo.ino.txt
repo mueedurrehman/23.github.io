@@ -1,0 +1,24 @@
+ int leftServo =6;
+int rightServo= 5;
+#include <Servo.h>
+Servo parallax1;
+Servo parallax2;
+
+void setup() {
+  pinMode(leftServo, OUTPUT);
+  pinMode(rightServo, OUTPUT);
+  parallax1.attach(leftServo);
+  parallax2.attach(rightServo);
+}
+
+void loop() {
+    parallax1.write(180); //wheel on the other side so the other servo rotates in the opposite different direction
+    parallax2.write(40); //one servo was loosely attached to the wheel so we set the other one to a lower speed
+    delay(3000);
+    parallax1.write(90);
+    parallax2.write(90);
+    delay(500);
+    parallax1.write(180); //Have one servo run and stop the other for turning.
+    parallax2.write(90);
+    delay(1500);
+}
